@@ -1,586 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> Surya Anish K</title>
-    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdOCptOHjbfKzynPAVKl4k8ete7nu_R0R9wpNZ5VQ5xWXarspzd3q15mGOfHT8e4MJMRA_qikKh9XiwldgvKCXo4fgSYH1CQds7gr5doGB_PxrWq4mXQwbGSp5lCF4eNUy8lybl1SRMIJgBH5HjQUPNULrDOqrKhasgeOy5ARPr8DA5Y08RCWBLvAw4e0/s320/WhatsApp%20Image%202025-12-06%20at%2023.08.07_b45e4d02.jpg">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    </head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surya Anish K</title>
+  <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdOCptOHjbfKzynPAVKl4k8ete7nu_R0R9wpNZ5VQ5xWXarspzd3q15mGOfHT8e4MJMRA_qikKh9XiwldgvKCXo4fgSYH1CQds7gr5doGB_PxrWq4mXQwbGSp5lCF4eNUy8lybl1SRMIJgBH5HjQUPNULrDOqrKhasgeOy5ARPr8DA5Y08RCWBLvAw4e0/s320/WhatsApp%20Image%202025-12-06%20at%2023.08.07_b45e4d02.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-    <body>
-        <header>
-        <a class="logo" href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdOCptOHjbfKzynPAVKl4k8ete7nu_R0R9wpNZ5VQ5xWXarspzd3q15mGOfHT8e4MJMRA_qikKh9XiwldgvKCXo4fgSYH1CQds7gr5doGB_PxrWq4mXQwbGSp5lCF4eNUy8lybl1SRMIJgBH5HjQUPNULrDOqrKhasgeOy5ARPr8DA5Y08RCWBLvAw4e0/s320/WhatsApp%20Image%202025-12-06%20at%2023.08.07_b45e4d02.jpg" alt="Profile Image"></a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-        </header>
+<!-- ========== HEADER ========== -->
+<header>
+  <a class="logo" href="#" onclick="showPage('home');return false;">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdOCptOHjbfKzynPAVKl4k8ete7nu_R0R9wpNZ5VQ5xWXarspzd3q15mGOfHT8e4MJMRA_qikKh9XiwldgvKCXo4fgSYH1CQds7gr5doGB_PxrWq4mXQwbGSp5lCF4eNUy8lybl1SRMIJgBH5HjQUPNULrDOqrKhasgeOy5ARPr8DA5Y08RCWBLvAw4e0/s320/WhatsApp%20Image%202025-12-06%20at%2023.08.07_b45e4d02.jpg" alt="Surya Anish K">
+  </a>
+  <nav id="mainNav">
+    <a href="#" onclick="showPage('home');return false;" data-page="home" class="nav-active">Home</a>
+    <a href="#" onclick="showPage('projects');return false;" data-page="projects">Projects</a>
+    <a href="#" onclick="showPage('education');return false;" data-page="education">Education</a>
+    <a href="#" onclick="showPage('achievements');return false;" data-page="achievements">Achievements</a>
+    <a href="#" onclick="showPage('blog');return false;" data-page="blog">Blog</a>
+    <a href="#" onclick="showPage('contact');return false;" data-page="contact">Contact Me</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-        <section>
-            <div class="container">
-                <div class="left-section">
-                    <div class="content">
-                        <p class="greeting">Hi, I am</p>
-                        <h1 class="name">SURYA ANISH K</h1>
-                        <p class="title">Python Developer/ Web Developer</p>
-                        
-                        <div class="social-links">
-                            <a href="mailto:suryaanish1149198@gmail.com" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/surya-anish-6a2458227/" class="social-icon" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/Suryaa-k" class="social-icon" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://x.com/_Suryaak_" class="social-icon" aria-label="Twitter(X)">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="right-section">
-                    <div class="image-container">
-                        <img src="https://png.pngtree.com/background/20250227/original/pngtree-contemporary-office-setting-featuring-state-of-the-art-devices-and-futuristic-picture-image_13294375.jpg" alt="Code Editor">
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- ========== PAGE: HOME (Hero + About + Hobbies) ========== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <div class="home-hero">
+    <div class="left-section">
+      <div class="content">
+        <p class="greeting">Hi, I am</p>
+        <h1 class="name">SURYA ANISH K</h1>
+        <p class="hero-title">Python Developer / Web Developer</p>
+        <div class="social-links">
+          <a href="mailto:suryaanish1149198@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/surya-anish-6a2458227/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Suryaa-k" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/_Suryaak_" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="image-container" id="heroImg">
+        <img src="https://png.pngtree.com/background/20250227/original/pngtree-contemporary-office-setting-featuring-state-of-the-art-devices-and-futuristic-picture-image_13294375.jpg" alt="Code Editor">
+      </div>
+    </div>
+  </div>
 
   <!-- ABOUT -->
-  <section id="about">
-        <!-- Second Section - Who We Are -->
-    <section class="about-section">
-        <div class="about-container">
-            <!-- Header -->
-            <div class="section-header">
-                <h1 class="main-title">ABOUT ME!</h1>
-                <div class="title-underline"></div>
-            </div>
-
-            <!-- Three Service Cards -->
-            <div class="services-grid">
-                <!-- Card 1: Video Distribution -->
-                <div class="service-card">
-                    <div class="icon-box">
-                        <p>ANALYSIS</p>
-                    </div>
-                    <p class="service-description">
-                        Proficient in analytical thinking, adept at examining data, identifying patterns, and deriving actionable insights to solve complex problems effectively.
-                    </p>
-                </div>
-
-                <!-- Card 2: Video Hosting -->
-                <div class="service-card">
-                    <div class="icon-box">
-                        <p>LEARNING</p>
-                    </div>
-                    <p class="service-description">
-                        Committed to continuous learning, embracing new knowledge, skills, and technologies to adapt, innovate, and excel in evolving environments.
-                    </p>
-                </div>
-
-                <!-- Card 3: Video Production -->
-                <div class="service-card">
-                    <div class="icon-box">
-                        <p>IMPLEMENTATION</p>
-                    </div>
-                    <p class="service-description">
-                        Skilled in implementation, transforming ideas into practical outcomes by planning, executing, and refining strategies to achieve measurable results.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Company Description -->
-            <div class="company-description">
-                <p>
-                    To secure an entry-level position in a dynamic software organization where I can leverage my technical skills and
-                    problem-solving abilities. Passionate about coding, algorithms, and software development. Aiming to apply my
-                    academic knowledge to build scalable solutions in a collaborative environment.
-                </p>
-            </div>
+  <section class="about-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h1 class="main-title">ABOUT ME!</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Analysis" class="service-img"></div>
+          <h4>ANALYSIS</h4>
+          <p class="service-description">Proficient in analytical thinking, adept at examining data, identifying patterns, and deriving actionable insights to solve complex problems effectively.</p>
         </div>
-    </section>
+        <div class="service-card">
+          <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3176/3176272.png" alt="Learning" class="service-img"></div>
+          <h4>LEARNING</h4>
+          <p class="service-description">Committed to continuous learning, embracing new knowledge, skills, and technologies to adapt, innovate, and excel in evolving environments.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1157/1157109.png" alt="Implementation" class="service-img"></div>
+          <h4>IMPLEMENTATION</h4>
+          <p class="service-description">Skilled in implementation, transforming ideas into practical outcomes by planning, executing, and refining strategies to achieve measurable results.</p>
+        </div>
+      </div>
+      <div class="company-description">
+        <p>To secure an entry-level position in a dynamic software organization where I can leverage my technical skills and problem-solving abilities. Passionate about coding, algorithms, and software development. Aiming to apply my academic knowledge to build scalable solutions in a collaborative environment.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-        <!-- Third Section - Portfolio/Projects -->
-        <section class="portfolio-section">
-            <div class="portfolio-container">
-            <!-- <div class="section-header">
-                <h1 class="main-title">MY PROJECTS</h1>
-                <div class="title-underline"></div>
-            </div>  -->
-            <!-- Filter Tabs -->
-            <div class="filter-tabs">
-                <button class="filter-btn active" data-filter="all">ALL</button>
-                <button class="filter-btn" data-filter="portfolio">PORTFOLIO</button>
-                <button class="filter-btn" data-filter="coded">CODED</button>
-                <button class="filter-btn" data-filter="designed">DESIGNED</button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="projects-grid">
-                <!-- Project 1 - AI Project -->
-                <div class="project-card" data-category="coded">
-                    <div class="project-image">
-                        <img src="Images/Picture 5.png" alt="React Project">
-                        <div class="project-overlay">
-                            <h3>Book Finder</h3>
-                            <p>React Project</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 - Anime Character -->
-                <div class="project-card" data-category="designed">
-                    <div class="project-image">
-                        <img src="Images/Picture1.png" alt="Minor Project">
-                        <div class="project-overlay">
-                            <h3>Detection Of Cyber Attacks</h3>
-                            <p>Cyber Security Based AIML Project</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 - Music App -->
-                <div class="project-card" data-category="portfolio">
-                    <div class="project-image">
-                        <img src="Images/PF1.png" alt="Main Portfolio">
-                        <div class="project-overlay">
-                            <h3>Surya Anish K </h3>
-                            <p>Main Portfolio</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 - Music App -->
-                <div class="project-card" data-category="designed">
-                    <div class="project-image">
-                        <img src="Images/Picture2.png" alt="Music Application">
-                        <div class="project-overlay">
-                            <h3>Parkinson's Disease</h3>
-                            <p>Disease Prediction Using AIML</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 - Game Design -->
-                <div class="project-card" data-category="portfolio">
-                    <div class="project-image">
-                        <img src="Images/TPF.png" alt="Friend Folio">
-                        <div class="project-overlay">
-                            <h3>C. Tarun Varma</h3>
-                            <p>Friend's Portfolio</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 - Game Design -->
-                <div class="project-card" data-category="coded">
-                    <div class="project-image">
-                        <img src="Images/Picture 3.png" alt="Game Design">
-                        <div class="project-overlay">
-                            <h3>Weather Forecast</h3>
-                            <p>React using Weather API's </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 - Machine Learning -->
-                <div class="project-card" data-category="coded">
-                    <div class="project-image">
-                        <img src="Images/Picture 4.png" alt="Machine Learning Projects">
-                        <div class="project-overlay">
-                            <h3>Recipe Ideas</h3>
-                            <p>Front-End Raect Project</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 - Music App -->
-                <div class="project-card" data-category="portfolio">
-                    <div class="project-image">
-                        <img src="Images/PF2.png" alt="Portfolio 2.0">
-                        <div class="project-overlay">
-                            <h3>Surya Anish K 2.0</h3>
-                            <p>Portfolio 2.0</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 - Machine Learning -->
-                <div class="project-card" data-category="coded">
-                    <div class="project-image">
-                        <img src="Images/MMS.png" alt="Machine Learning Projects">
-                        <div class="project-overlay">
-                            <h3>Media Management System</h3>
-                            <p>Django Project</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 - Machine Learning -->
-                <div class="project-card" data-category="portfolio">
-                    <div class="project-image">
-                        <img src="Images/PF3.png" alt="Portfolio 3.0">
-                        <div class="project-overlay">
-                            <h3>Surya Anish K 3.0</h3>
-                            <p>Portfolio 3.0</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7 - Machine Learning -->
-                <div class="project-card" data-category="designed">
-                    <div class="project-image">
-                        <img src="Images/AGTS.png" alt="Machine Learning Projects">
-                        <div class="project-overlay">
-                            <h3>E-Learning Platform</h3>
-                            <p>Full Stack Web Application</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7 - Machine Learning -->
-                <div class="project-card" data-category="portfolio">
-                    <div class="project-image">
-                        <img src="Images/PF4.png" alt="Portfolio 4.0">
-                        <div class="project-overlay">
-                            <h3>Surya Anish K 4.0</h3>
-                            <p>Portfolio 4.0</p>
-                        </div>
-                    </div>
-                </div>
-
-            <!-- Footer Text -->
-            <div class="portfolio-footer">
-                <p>For Source Codes Reach My Github Portal.</p><br>
-                <p>And many more to come!</p>
-            </div>
+  <!-- HOBBIES -->
+  <section class="hobbies-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">WHAT I LOVE TO DO</p>
+        <h1 class="main-title">MY HOBBIES</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80" alt="Reading"></div>
+          <div class="hobby-info"><i class="fas fa-book-open"></i><h3>Reading Novels</h3><p>Exploring diverse genres and stories to broaden imagination and perspective.</p></div>
         </div>
-    </section>
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=400&q=80" alt="Chess"></div>
+          <div class="hobby-info"><i class="fas fa-chess"></i><h3>Active Chess Player</h3><p>Strategic thinker who regularly plays and studies chess to sharpen problem-solving skills.</p></div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&q=80" alt="Football"></div>
+          <div class="hobby-info"><i class="fas fa-futbol"></i><h3>Football Player</h3><p>Passionate about football, enjoying both competitive matches and casual games with friends.</p></div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=400&q=80" alt="Swimming"></div>
+          <div class="hobby-info"><i class="fas fa-person-swimming"></i><h3>Swimmer</h3><p>Regular swimmer who enjoys the physical and mental benefits of time in the water.</p></div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&q=80" alt="Blog Writing"></div>
+          <div class="hobby-info"><i class="fas fa-pen-nib"></i><h3>Blog Writer</h3><p>Author of two active blogs — sharing tech insights, stories, and knowledge with the world.</p></div>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-img-wrap"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80" alt="Web Design"></div>
+          <div class="hobby-info"><i class="fas fa-palette"></i><h3>Web Designer</h3><p>Designing visually appealing, user-friendly websites that blend creativity with functionality.</p></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="skills">
-        <!-- Fourth Section - Skills -->
-    <section class="skills-section">
-        <div class="skills-container">
-            <!-- Section Header -->
-            <div class="skills-header">
-                <h1 class="skills-title">SKILLS</h1>
-                <div class="skills-underline"></div>
-            </div>
+</div><!-- end page-home -->
 
-                <!-- Right Side - Skills Cards -->
-                <div class="skills-right">
-                    <!-- Card 1: OS -->
-                    <div class="skill-card">
-                        <div class="card-gradient"></div>
-                        <h3 class="card-title">OS</h3>
-                        <div class="card-underline"></div>
-                        <div class="skill-icons">
-                            <div class="skill-item">
-                                <i class="fab fa-windows"></i>
-                                <p>WINDOWS</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-linux"></i>
-                                <p>LINUX</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-microsoft"></i>
-                                <p>MICROSOFT OFFICE</p>
-                            </div>
-                        </div>
-                    </div>
+<!-- ========== PAGE: PROJECTS ========== -->
+<div id="page-projects" class="page">
+  <section class="portfolio-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">WHAT I'VE BUILT</p>
+        <h1 class="main-title">MY PROJECTS</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="portfolio">PORTFOLIO</button>
+        <button class="filter-btn" data-filter="coded">CODED</button>
+        <button class="filter-btn" data-filter="designed">DESIGNED</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="coded"><div class="project-image"><img src="Images/Picture 5.png" alt="Book Finder" onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=80'"><div class="project-overlay"><h3>Book Finder</h3><p>React Project</p></div></div></div>
+        <div class="project-card" data-category="designed"><div class="project-image"><img src="Images/Picture1.png" alt="Cyber Attacks" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80'"><div class="project-overlay"><h3>Detection Of Cyber Attacks</h3><p>Cyber Security AIML Project</p></div></div></div>
+        <div class="project-card" data-category="portfolio"><div class="project-image"><img src="Images/PF1.png" alt="Portfolio 1" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'"><div class="project-overlay"><h3>Surya Anish K</h3><p>Main Portfolio</p></div></div></div>
+        <div class="project-card" data-category="designed"><div class="project-image"><img src="Images/Picture2.png" alt="Parkinsons" onerror="this.src='https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&q=80'"><div class="project-overlay"><h3>Parkinson's Disease</h3><p>Disease Prediction Using AIML</p></div></div></div>
+        <div class="project-card" data-category="portfolio"><div class="project-image"><img src="Images/TPF.png" alt="Friend Portfolio" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80'"><div class="project-overlay"><h3>C. Tarun Varma</h3><p>Friend's Portfolio</p></div></div></div>
+        <div class="project-card" data-category="coded"><div class="project-image"><img src="Images/Picture 3.png" alt="Weather" onerror="this.src='https://images.unsplash.com/photo-1504608524841-42584120d693?w=400&q=80'"><div class="project-overlay"><h3>Weather Forecast</h3><p>React using Weather API</p></div></div></div>
+        <div class="project-card" data-category="coded"><div class="project-image"><img src="Images/Picture 4.png" alt="Recipe" onerror="this.src='https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&q=80'"><div class="project-overlay"><h3>Recipe Ideas</h3><p>Front-End React Project</p></div></div></div>
+        <div class="project-card" data-category="portfolio"><div class="project-image"><img src="Images/PF2.png" alt="Portfolio 2" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'"><div class="project-overlay"><h3>Surya Anish K 2.0</h3><p>Portfolio 2.0</p></div></div></div>
+        <div class="project-card" data-category="coded"><div class="project-image"><img src="Images/MMS.png" alt="Media Management" onerror="this.src='https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&q=80'"><div class="project-overlay"><h3>Media Management System</h3><p>Django Project</p></div></div></div>
+        <div class="project-card" data-category="portfolio"><div class="project-image"><img src="Images/PF3.png" alt="Portfolio 3" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'"><div class="project-overlay"><h3>Surya Anish K 3.0</h3><p>Portfolio 3.0</p></div></div></div>
+        <div class="project-card" data-category="designed"><div class="project-image"><img src="Images/AGTS.png" alt="E-Learning" onerror="this.src='https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&q=80'"><div class="project-overlay"><h3>E-Learning Platform</h3><p>Full Stack Web Application</p></div></div></div>
+        <div class="project-card" data-category="portfolio"><div class="project-image"><img src="Images/PF4.png" alt="Portfolio 4" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&q=80'"><div class="project-overlay"><h3>Surya Anish K 4.0</h3><p>Portfolio 4.0</p></div></div></div>
+      </div>
+      <div class="portfolio-footer">
+        <p>For Source Codes visit my <a href="https://github.com/Suryaa-k" target="_blank" style="color:#00d4ff;">GitHub</a> profile.</p>
+        <p>And many more to come!</p>
+      </div>
+    </div>
+  </section>
+</div>
 
-                    <!-- Card 2: Languages -->
-                    <div class="skill-card">
-                        <div class="card-gradient"></div>
-                        <h3 class="card-title">LANGUAGES</h3>
-                        <div class="card-underline"></div>
-                        <div class="skill-icons">
-                            <div class="skill-item">
-                                <i class="fab fa-c"></i>
-                                <p>C</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code"></i>
-                                <p>CPP</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-python"></i>
-                                <p>PYTHON</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <p>SQL</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-java"></i>
-                                <p>JAVA</p>
-                            </div>
-                        </div>
-                    </div>
+<!-- ========== PAGE: EDUCATION + SKILLS ========== -->
+<div id="page-education" class="page">
 
-                    <!-- Card 3: Web-Dev -->
-                    <div class="skill-card">
-                        <div class="card-gradient"></div>
-                        <h3 class="card-title">WEB-DEV</h3>
-                        <div class="card-underline"></div>
-                        <div class="skill-icons skill-icons-four">
-                            <div class="skill-item">
-                                <i class="fab fa-html5"></i>
-                                <p>HTML</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <p>CSS</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-js"></i>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-react"></i>
-                                <p>REACT</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-git-alt"></i>
-                                <p>GIT</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="education-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">MY JOURNEY</p>
+        <h1 class="main-title">EDUCATION</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 - 2025</div>
+            <h3 class="timeline-title">Bachelor of Technology</h3>
+            <h4 class="timeline-institution">Malla Reddy Institute Of Technology and Science (JNTUH)</h4>
+            <p class="timeline-description">Computer Science and Engineering — CGPA: 6.3/10</p>
+            <div class="timeline-tags"><span class="tag">Web Development</span><span class="tag">Software Engineering</span><span class="tag">DSA</span></div>
+          </div>
         </div>
-    </section>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2019 - 2021</div>
+            <h3 class="timeline-title">Intermediate Education</h3>
+            <h4 class="timeline-institution">Narayana IIT Academy</h4>
+            <p class="timeline-description">12th Grade — Science (Physics, Chemistry, Mathematics) — 70%</p>
+            <div class="timeline-tags"><span class="tag">Mathematics</span><span class="tag">Physics</span><span class="tag">Chemistry</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2018 - 2019</div>
+            <h3 class="timeline-title">CBSE — 10th Grade</h3>
+            <h4 class="timeline-institution">Atomic Energy Central School - 1</h4>
+            <p class="timeline-description">Percentage: 75%</p>
+            <div class="timeline-tags"><span class="tag">Science</span><span class="tag">Mathematics</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="education">
-        <!-- Fifth Section - Education -->
-    <section class="education-section">
-        <div class="education-container">
-            <!-- Section Header -->
-            <div class="education-header">
-                <p class="education-subtitle">MY JOURNEY</p>
-                <h1 class="education-title">EDUCATION</h1>
-                <div class="education-underline"></div>
-            </div>
-
-            <!-- Timeline -->
-            <div class="timeline">
-                <!-- Education Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2021 - 2025</div>
-                        <h3 class="timeline-title">Bachelor of Technology</h3>
-                        <h4 class="timeline-institution">Malla Reddy Institute Of Technology and Science (JNTUH Affiliated)</h4>
-                        <p class="timeline-description">
-                            Computer Science and Engineering 
-                            with CGPA: 6.3/10
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">Software Engineering</span>
-                            <span class="tag">Data Structure and Algorithms</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2021</div>
-                        <h3 class="timeline-title">Intermediate Education</h3>
-                        <h4 class="timeline-institution">Narayana IIT Academy</h4>
-                        <p class="timeline-description">
-                            Completed 12th grade with focus on Science stream (Physics, Chemistry, Mathematics). 
-                            Percentage: 70%
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Mathematics</span>
-                            <span class="tag">Physics</span>
-                            <span class="tag">Chemistry</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018 - 2019</div>
-                        <h3 class="timeline-title">Central Board of Secondary Education</h3>
-                        <h4 class="timeline-institution">Atomic Energy Central School - 1</h4>
-                        <p class="timeline-description">
-                            Completed 10th grade with excellent academic performance. 
-                            Percentage: 75%
-                        </p>
-                        <div class="timeline-tags">
-                            <span class="tag">Science</span>
-                            <span class="tag">Mathematics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certifications Section -->
-                <div class="timeline-item">
-                    <div class="timeline-dot special-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Certifications</div>
-                        <h3 class="timeline-title">Professional Certifications</h3>
-                        <div class="certifications-grid">
-                            <div class="cert-card">
-                                <i class="fas fa-certificate"></i>
-                                <h5>Python Programming</h5>
-                                <p>CV Corp - 2026</p>
-                            </div>
-                            <div class="cert-card">
-                                <i class="fab fa-hackerrank"></i>
-                                <h5>SQL</h5>
-                                <p>Hacker Rank - 2025</p>
-                            </div>
-                            <div class="cert-card">
-                                <i class="fas fa-certificate"></i>
-                                <h5>Web Development</h5>
-                                <p>Infosys Springboard - 2024</p>
-                            </div>
-                            <div class="cert-card">
-                                <i class="fas fa-certificate"></i>
-                                <h5>Web Development</h5>
-                                <p>KOSKILL - 2023</p>
-                            </div>
-                            <li>For Certificates Reach Out My LinkedIn Profile</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="skills-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">WHAT I KNOW</p>
+        <h1 class="main-title">SKILLS</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-desktop"></i> Operating Systems</h3>
+          <div class="skill-items-row">
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/888/888882.png" alt="Windows"><span>Windows</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/6124/6124995.png" alt="Linux"><span>Linux</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732226.png" alt="MS Office"><span>MS Office</span></div>
+          </div>
         </div>
-    </section>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-items-row">
+            <div class="skill-item-card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C"><span>C</span></div>
+            <div class="skill-item-card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++"><span>C++</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"><span>Python</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/4492/4492311.png" alt="SQL"><span>SQL</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java"><span>Java</span></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-laptop-code"></i> Web Development</h3>
+          <div class="skill-items-row">
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML"><span>HTML</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"><span>CSS</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-item-card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"><span>React</span></div>
+            <div class="skill-item-card"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django"><span>Django</span></div>
+            <div class="skill-item-card"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git"><span>Git</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-        <!-- Sixth Section - Contact -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <!-- Section Header -->
-            <div class="contact-header">
-                <p class="contact-subtitle">GET IN TOUCH</p>
-                <h1 class="contact-title">CONTACT ME</h1>
-                <div class="contact-underline"></div>
-            </div>
+</div><!-- end page-education -->
 
-            <!-- Contact Content -->
-            <div class="contact-content">
-                <!-- Left Side - Contact Info -->
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-details">
-                            <h3>Email</h3>
-                            <p>suryaanish1149198@gmail.com</p>
-                            <a href="mailto:suryaanish1149198@gmail.com">Send a message</a>
-                        </div>
-                    </div>
+<!-- ========== PAGE: ACHIEVEMENTS + CERTIFICATIONS ========== -->
+<div id="page-achievements" class="page">
 
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-details">
-                            <h3>Phone</h3>
-                            <p>+91 81210 21005</p>
-                            <a href="tel:+918121021005">Call me</a>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-details">
-                            <h3>Location</h3>
-                            <p>Hyderabad, Telangana</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="contact-social">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/surya-anish-6a2458227/" class="social-link" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/Suryaa-k" class="social-link" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://x.com/_Suryaak_" class="social-link" aria-label="Twitter(X)">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side - Contact Form -->
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="49581ffe-1a34-4acd-a99e-2ede784cf73b">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+  <section class="achievements-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">WHAT I'VE EARNED</p>
+        <h1 class="main-title">MY ACHIEVEMENTS</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-img-wrap"><img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=400&q=80" alt="NSS"></div>
+          <div class="achievement-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="achievement-body"><h3>Member in NSS</h3><p>Active member of the National Service Scheme, contributing to community development and social welfare.</p></div>
         </div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2024 SURYA ANISH K. All rights reserved.</p>
-            <p>Made with <i class="fas fa-heart"></i> by SURYA ANISH K</p>
-        </footer>
-    </section>
+        <div class="achievement-card">
+          <div class="achievement-img-wrap"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="CSI"></div>
+          <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="achievement-body"><h3>Member in CSI</h3><p>Member of the Computer Society of India, engaging with the tech community and staying updated with industry trends.</p></div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-img-wrap"><img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=400&q=80" alt="Chess"></div>
+          <div class="achievement-icon"><i class="fas fa-chess-king"></i></div>
+          <div class="achievement-body"><h3>School Chess Champion</h3><p>Won the school-level chess championship, demonstrating strong strategic thinking and problem-solving under pressure.</p></div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-img-wrap"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt="National Events"></div>
+          <div class="achievement-icon"><i class="fas fa-globe"></i></div>
+          <div class="achievement-body"><h3>National-Wide Events</h3><p>Participated in multiple national-level competitions and events, gaining broader exposure beyond the classroom.</p></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-    <script src="script.js"></script>
-    </body>
+  <section class="certs-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">VERIFIED SKILLS</p>
+        <h1 class="main-title">CERTIFICATIONS</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-big-card">
+          <div class="cert-img-wrap"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&q=80" alt="Python"></div>
+          <div class="cert-details"><i class="fas fa-certificate cert-badge"></i><h3>Python Programming</h3><p class="cert-issuer">CV Corp</p><p class="cert-year">2026</p></div>
+        </div>
+        <div class="cert-big-card">
+          <div class="cert-img-wrap"><img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&q=80" alt="SQL"></div>
+          <div class="cert-details"><i class="fab fa-hackerrank cert-badge"></i><h3>SQL</h3><p class="cert-issuer">HackerRank</p><p class="cert-year">2025</p></div>
+        </div>
+        <div class="cert-big-card">
+          <div class="cert-img-wrap"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80" alt="Web Dev"></div>
+          <div class="cert-details"><i class="fas fa-globe cert-badge"></i><h3>Web Development</h3><p class="cert-issuer">Infosys Springboard</p><p class="cert-year">2024</p></div>
+        </div>
+        <div class="cert-big-card">
+          <div class="cert-img-wrap"><img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&q=80" alt="Web Dev 2"></div>
+          <div class="cert-details"><i class="fas fa-certificate cert-badge"></i><h3>Web Development</h3><p class="cert-issuer">KOSKILL</p><p class="cert-year">2023</p></div>
+        </div>
+      </div>
+      <p class="cert-note"><i class="fab fa-linkedin"></i> View all certificates on my <a href="https://www.linkedin.com/in/surya-anish-6a2458227/" target="_blank">LinkedIn Profile</a></p>
+    </div>
+  </section>
+
+</div><!-- end page-achievements -->
+
+<!-- ========== PAGE: BLOG ========== -->
+<div id="page-blog" class="page">
+  <section class="blog-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">MY WRITING</p>
+        <h1 class="main-title">BLOG</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="blog-tabs">
+        <button class="blog-tab active" data-blog="rawstuff"><i class="fas fa-star"></i> .RAW Stuff</button>
+        <button class="blog-tab" data-blog="django"><i class="fab fa-python"></i> Python Django</button>
+      </div>
+
+      <!-- RAW Stuff Posts -->
+      <div class="blog-posts" id="rawstuff-posts">
+        <div class="blog-card" onclick="openBlogReader('Zepto &amp; Blinkit','Business','June 24, 2023','https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&q=80','https://ksuryaanish.blogspot.com/2023/06/zepto-blinkit.html','How can grocery apps deliver items within 10 minutes? This post explores the systems, dark stores, gig workers, and technology infrastructure that powers ultra-fast delivery companies like Zepto and Blinkit. A deep dive into their business models and logistics networks that have disrupted traditional retail.')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400&q=80" alt="Zepto Blinkit"><span class="blog-date">June 24, 2023</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Business</span><h3>Zepto &amp; Blinkit</h3><p>How can grocery apps deliver items within 10 minutes? Exploring the systems and infrastructure behind ultra-fast delivery.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('FAITH OAKLEY: One Arm Archery Girl','Inspiration','April 2, 2023','https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&q=80','https://ksuryaanish.blogspot.com/2023/04/faith-oakley-one-arm-archery-girl.html','Faith Oakley was born with Erb-Duchenne palsy, leaving her with limited use of one arm. Against all odds, she became an extraordinary archery champion. This is her inspiring story of determination, resilience, and breaking barriers. She proved that physical limitations cannot stop a determined spirit, winning multiple competitions and inspiring millions around the world.')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=400&q=80" alt="Faith Oakley"><span class="blog-date">April 2, 2023</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Inspiration</span><h3>FAITH OAKLEY: One Arm Archery Girl</h3><p>The inspiring story of Faith Oakley who was born with Erb-Duchenne palsy and became an extraordinary archery champion.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Galileo Galilei: Father of Science','History','March 2, 2023','https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80','https://ksuryaanish.blogspot.com/2023/03/galileo-galilei-father-of-science.html','Galileo Galilei (1564–1642) is widely regarded as the father of modern physics and observational astronomy. Born in Pisa, Italy, he made groundbreaking contributions to the scientific revolution. His telescopic observations confirmed the heliocentric model of the solar system. He formulated the laws of motion, laying the foundation for Newtonian mechanics. Despite facing persecution from the Church for his findings, Galileo stood firm in his scientific beliefs. His famous quote: \"And yet it moves.\"')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&q=80" alt="Galileo"><span class="blog-date">March 2, 2023</span></div>
+          <div class="blog-card-body"><span class="blog-tag">History</span><h3>Galileo Galilei: Father of Science</h3><p>A deep dive into the life of Galileo — founder of modern physics who unravelled the mysteries of motion and the cosmos.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('EYES 👀','Photography','September 4, 2022','https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80','https://ksuryaanish.blogspot.com/2022/09/cat-with-blue-eyes-img-id-3.html','A photographic post featuring a stunning black cat with mesmerizing blue eyes. The photograph captures the mystery and elegance of feline beauty — the contrast between the jet-black fur and the vivid blue gaze is truly captivating. Sometimes a single image says more than a thousand words.')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&q=80" alt="Cat Eyes"><span class="blog-date">September 4, 2022</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Photography</span><h3>EYES 👀</h3><p>A stunning black cat with captivating blue eyes — a simple but beautiful photographic post.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+
+      <!-- Django Posts -->
+      <div class="blog-posts hidden" id="django-posts">
+        <div class="blog-card" onclick="openBlogReader('Django Day 10: Generics','Django','June 9, 2026','https://blogger.googleusercontent.com/img/a/AVvXsEj1Fvyd0D8xnm6Th6UHZpY4nqsKdOmMPZiLC7tIxrnFRhy_zpGzdIJVMvclnojW2zJ2un4BMSB3m3ouRO0Loez3jCdYhntkbDLKHd-YOcPELv8U4BLHt7fxAWs8p6Ts_7AkyYYCm3nXfLtK9Srmx7ICAf2425nxKjYLpRJm2-HDGZ1h9OpQLYRrJwg5F2Y=w800','https://adithyaa-django.blogspot.com/2026/06/day-10-generics.html','Django Generic Views simplify common web development patterns. This post covers: DetailView — display a single object, CreateView — form to create an object, ListView — display a list of objects, UpdateView — form to edit an existing object, DeleteView — confirm and delete an object. Also introduces REST API fundamentals and Django REST Framework Serializers for converting model instances to JSON.')">
+          <div class="blog-card-img"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj1Fvyd0D8xnm6Th6UHZpY4nqsKdOmMPZiLC7tIxrnFRhy_zpGzdIJVMvclnojW2zJ2un4BMSB3m3ouRO0Loez3jCdYhntkbDLKHd-YOcPELv8U4BLHt7fxAWs8p6Ts_7AkyYYCm3nXfLtK9Srmx7ICAf2425nxKjYLpRJm2-HDGZ1h9OpQLYRrJwg5F2Y=w559-h314" alt="Generics"><span class="blog-date">June 9, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 10: Generics</h3><p>Covering Detailview, Createview, Listview, Updateview, Deleteview, REST API and Serializers.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 9: Connecting to dbsqlite3','Django','June 3, 2026','https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&q=80','https://adithyaa-django.blogspot.com/2026/06/django-day-8-connecting-to-dbsqlite3.html','Setting up SQLite3 in Django: Django uses SQLite3 by default. In settings.py, configure DATABASES with ENGINE set to django.db.backends.sqlite3. Run python manage.py migrate to apply default migrations. Use python manage.py createsuperuser to create an admin account. The db.sqlite3 file gets created in your project root automatically.')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&q=80" alt="SQLite"><span class="blog-date">June 3, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 9: Connecting to dbsqlite3</h3><p>Setting up and connecting Django project to SQLite3 database for persistent data storage.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 8: Foreign Key','Django','June 3, 2026','https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80','https://adithyaa-django.blogspot.com/2026/06/django-day-8-foreign-key.html','Foreign Keys in Django create relationships between models. Example: a Student model with a ForeignKey to a Department model. When defined as department = models.ForeignKey(Department, on_delete=models.CASCADE), Django automatically creates a department_id column. on_delete=CASCADE means deleting a department also deletes all related students. Use select_related() for efficient querying of related objects.')">
+          <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&q=80" alt="Foreign Key"><span class="blog-date">June 3, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 8: Foreign Key</h3><p>Understanding and implementing Foreign Key relationships in Django models for relational data.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 7: Linking HTML &amp; CSS Files','Django','May 20, 2026','https://blogger.googleusercontent.com/img/a/AVvXsEhUijSWFdAx_-8v9wnawEagsJV3BA5NdoYiln1XqdA00encNQ_r-kgcrDwuAK41sIriauzBAGepX_RAUQmvX5kO3jWzEfk5J5vV7QQuA_5yliZtK_JmpVa_05CRNyTM62EOiespwuopUn-hrzL5sb5F51SD_Hq9fyScUnL-PIdAG9hoGDh4KAD1cLdh3Ss=w800','https://adithyaa-django.blogspot.com/2026/05/django-day-7-linking-html-css-files-to.html','To link static HTML and CSS in Django: 1) Create a static/ folder in your app. 2) Add {% load static %} at the top of your HTML template. 3) Link CSS with: link rel=stylesheet href={% static css/style.css %}. 4) In settings.py set STATICFILES_DIRS = [BASE_DIR / static]. 5) In TEMPLATES settings, ensure DIRS includes your templates path. Run collectstatic for production deployments.')">
+          <div class="blog-card-img"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhUijSWFdAx_-8v9wnawEagsJV3BA5NdoYiln1XqdA00encNQ_r-kgcrDwuAK41sIriauzBAGepX_RAUQmvX5kO3jWzEfk5J5vV7QQuA_5yliZtK_JmpVa_05CRNyTM62EOiespwuopUn-hrzL5sb5F51SD_Hq9fyScUnL-PIdAG9hoGDh4KAD1cLdh3Ss=w550-h309" alt="HTML CSS Django"><span class="blog-date">May 20, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 7: Linking HTML &amp; CSS Files</h3><p>Step-by-step guide to linking static HTML and CSS files using Django templates and the static files system.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 6: RMS Project','Django','May 19, 2026','https://blogger.googleusercontent.com/img/a/AVvXsEh4_JfL7kana5711yzpuXtc4C-aahq-wCJ2z4bdtndQeo-RBdi7y6roo-d2mGoGoia6nSu7yFVALzrmG9YFi46905oe2Q2Cn-jIClB4j18PG5UPyTlB66uZk3VTJy3tG0LlQ_RE3wCcLUNtNVON23cC3JCzZiMeT6j-T5FHawB8sFW44lh3aY6xxv_isdw=w800','https://adithyaa-django.blogspot.com/2026/05/django-day-6-rms-project.html','Restaurant Management System (RMS) in Django: Step 1 — Create virtual environment and install Django. Step 2 — django-admin startproject rms_project. Step 3 — python manage.py startapp restaurant. Step 4 — Define models: Menu, Category, Order. Step 5 — Register in admin.py. Step 6 — Run makemigrations and migrate. Step 7 — Create superuser and login to admin panel to manage menu items.')">
+          <div class="blog-card-img"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEh4_JfL7kana5711yzpuXtc4C-aahq-wCJ2z4bdtndQeo-RBdi7y6roo-d2mGoGoia6nSu7yFVALzrmG9YFi46905oe2Q2Cn-jIClB4j18PG5UPyTlB66uZk3VTJy3tG0LlQ_RE3wCcLUNtNVON23cC3JCzZiMeT6j-T5FHawB8sFW44lh3aY6xxv_isdw=w486-h353" alt="RMS Project"><span class="blog-date">May 19, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 6: RMS Project</h3><p>Full Restaurant Management System with setup steps, virtual environments, migrations and admin configuration.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 5','Django','May 18, 2026','https://blogger.googleusercontent.com/img/a/AVvXsEg_zz3iXhVzXnQ-dkSd4hVc03r_ZGnk8A5UV2K5559hUdy0jfTPF0ORlQG-Yg1c4msLCIUwE9KdWkH9os0KUe6f--7SvP1d8ZKLIWmT6wci9ldH7MLl2nLQ9vCmHQ0omt-bfmFaL2XqTwNxeYSxlxDAIy-JT6ESKD3PMuJ5dyf_cjCBduETd-5N33SEq0o=w800','https://adithyaa-django.blogspot.com/2026/05/django-day-5.html','Day 5 covers: Updating HTML templates with dynamic content from views. Creating a student form using Django forms.py. Defining form fields like CharField, EmailField, IntegerField. Rendering forms in templates with {{ form.as_p }}. Handling POST requests and saving form data. URL patterns with path() and include(). Namespace configuration in app-level urls.py.')">
+          <div class="blog-card-img"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEg_zz3iXhVzXnQ-dkSd4hVc03r_ZGnk8A5UV2K5559hUdy0jfTPF0ORlQG-Yg1c4msLCIUwE9KdWkH9os0KUe6f--7SvP1d8ZKLIWmT6wci9ldH7MLl2nLQ9vCmHQ0omt-bfmFaL2XqTwNxeYSxlxDAIy-JT6ESKD3PMuJ5dyf_cjCBduETd-5N33SEq0o=w565-h318" alt="Django Day 5"><span class="blog-date">May 18, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 5</h3><p>Updating templates, adding student HTML views, creating forms and handling URL routing in Django apps.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+        <div class="blog-card" onclick="openBlogReader('Django Day 4','Django','May 18, 2026','https://blogger.googleusercontent.com/img/a/AVvXsEhTzPLnjsP3_lh917CN5M_MGpGdoQF_sxci7GEPc0VhOOL5lTVmuX4aERmvrbbgKX-Ac_KpNhykto45YapupcF5_JPDWotZgsBvZhtgv6i549OLRkWUzwMBbwNcvoIt-l2lPxI2-8AY8pFi-SggB-BfOx7vuBgB-9V1TvvQToyRDoodMVBc-qi-58eALaE=w800','https://adithyaa-django.blogspot.com/2026/05/dajngo-day-4.html','Day 4 covers Templates in Django: Create a templates/ directory inside your app folder. Create HTML files like index.html and student.html. In settings.py, update TEMPLATES DIRS to point to your templates folder. In views.py, use render(request, template_name, context) to return HTML responses. Pass data as context dictionary. URL patterns connect URLs to view functions using path().')">
+          <div class="blog-card-img"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhTzPLnjsP3_lh917CN5M_MGpGdoQF_sxci7GEPc0VhOOL5lTVmuX4aERmvrbbgKX-Ac_KpNhykto45YapupcF5_JPDWotZgsBvZhtgv6i549OLRkWUzwMBbwNcvoIt-l2lPxI2-8AY8pFi-SggB-BfOx7vuBgB-9V1TvvQToyRDoodMVBc-qi-58eALaE=w565-h318" alt="Django Day 4"><span class="blog-date">May 18, 2026</span></div>
+          <div class="blog-card-body"><span class="blog-tag">Django</span><h3>Django Day 4</h3><p>Creating Templates directory, HTML files, configuring DIRS in settings and setting up student views and URLs.</p><span class="blog-read-more">Read Post <i class="fas fa-arrow-right"></i></span></div>
+        </div>
+      </div>
+
+      <div class="blog-footer">
+        <a href="https://ksuryaanish.blogspot.com" target="_blank" class="blog-visit-btn"><i class="fas fa-external-link-alt"></i> Visit .RAW Stuff Blog</a>
+        <a href="https://adithyaa-django.blogspot.com" target="_blank" class="blog-visit-btn"><i class="fab fa-python"></i> Visit Python Django Blog</a>
+      </div>
+    </div>
+  </section>
+</div><!-- end page-blog -->
+
+<!-- ========== PAGE: CONTACT ========== -->
+<div id="page-contact" class="page">
+  <section class="contact-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-subtitle">GET IN TOUCH</p>
+        <h1 class="main-title">CONTACT ME</h1>
+        <div class="title-underline" data-match="true"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="social-profiles">
+            <h3>My Social Profiles</h3>
+            <div class="social-profile-cards">
+
+              <a href="https://www.linkedin.com/in/surya-anish-kudupudi-6a2458227/" target="_blank" class="profile-card">
+                <div class="profile-preview">
+                  <div class="profile-preview-bg" style="background:linear-gradient(135deg,#0a66c2,#004182);"></div>
+                  <div class="profile-preview-content">
+                    <img class="profile-avatar" src="https://yt3.googleusercontent.com/i6KNxiy3gME-BulL4WnuGkTGqHuSYF8jl1WRn0rXftcJdSYK7dHKcJ3gLAaPc-KfhmLSYPwf824=s900-c-k-c0x00ffffff-no-rj" alt="Surya LinkedIn">
+                    <div class="profile-preview-info"><span class="profile-pname">Surya Anish K</span><span class="profile-ptitle">Python Developer · Web Developer</span></div>
+                  </div>
+                </div>
+                <div class="profile-card-footer"><i class="fab fa-linkedin" style="color:#0a66c2;"></i><span>LinkedIn</span><span class="profile-handle">surya-anish-6a2458227</span></div>
+              </a>
+
+              <a href="https://github.com/Suryaa-k" target="_blank" class="profile-card">
+                <div class="profile-preview">
+                  <div class="profile-preview-bg" style="background:linear-gradient(135deg,#24292e,#1a1a2e);"></div>
+                  <div class="profile-preview-content">
+                    <img class="profile-avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtR3ZbUep044uvCpnykQBnY4i4rBHHdkmxyDLRISsirW4SXayA_33I90&s=10" alt="Surya GitHub">
+                    <div class="profile-preview-info"><span class="profile-pname">Suryaa-k</span><span class="profile-ptitle">Python · React · Django · Web Dev</span></div>
+                  </div>
+                </div>
+                <div class="profile-card-footer"><i class="fab fa-github" style="color:#e8eef3;"></i><span>GitHub</span><span class="profile-handle">Suryaa-k</span></div>
+              </a>
+
+              <a href="https://x.com/_Suryaak_" target="_blank" class="profile-card">
+                <div class="profile-preview">
+                  <div class="profile-preview-bg" style="background:linear-gradient(135deg,#14171a,#000);"></div>
+                  <div class="profile-preview-content">
+                    <img class="profile-avatar" src="https://img.magnific.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?semt=ais_hybrid&w=740&q=80" alt="Surya X">
+                    <div class="profile-preview-info"><span class="profile-pname">Surya Anish K</span><span class="profile-ptitle">Python Programming · Leetcode</span></div>
+                  </div>
+                </div>
+                <div class="profile-card-footer"><i class="fa-brands fa-x-twitter" style="color:#fff;"></i><span>Twitter / X</span><span class="profile-handle">_Suryaak_</span></div>
+              </a>
+
+              <a href="https://www.instagram.com/_suryaa.k_/" target="_blank" class="profile-card">
+                <div class="profile-preview">
+                  <div class="profile-preview-bg" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);"></div>
+                  <div class="profile-preview-content">
+                    <img class="profile-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/250px-Instagram_logo_2016.svg.png" alt="Surya Instagram">
+                    <div class="profile-preview-info"><span class="profile-pname">Surya Anish K</span><span class="profile-ptitle">Content Creator · Traveller · TFI Banisa</span></div>
+                  </div>
+                </div>
+                <div class="profile-card-footer"><i class="fab fa-instagram" style="color:#e1306c;"></i><span>Instagram</span><span class="profile-handle">_suryaa.k_</span></div>
+              </a>
+
+              <a href="https://wa.me/918121021005" target="_blank" class="profile-card">
+                <div class="profile-preview">
+                  <div class="profile-preview-bg" style="background:linear-gradient(135deg,#25d366,#128c7e);"></div>
+                  <div class="profile-preview-content">
+                    <img class="profile-avatar" src="https://play-lh.googleusercontent.com/Gqxk4T0uZsDwFp07DE-508hkyvcNmgFuRwPiwTEfF7D7OzGv1FdHDzEyMxNsSBZLOJlGpe3ULvVM2RgrRAlBqA" alt="Surya WhatsApp">
+                    <div class="profile-preview-info"><span class="profile-pname">Surya Anish K</span><span class="profile-ptitle">+91 81210 21005</span></div>
+                  </div>
+                </div>
+                <div class="profile-card-footer"><i class="fab fa-whatsapp" style="color:#25d366;"></i><span>WhatsApp</span><span class="profile-handle">+91 81210 21005</span></div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="contact-info-cards">
+            <div class="info-card"><div class="info-icon"><i class="fas fa-envelope"></i></div><div class="info-details"><h3>Email</h3><p>suryaanish1149198@gmail.com</p><a href="mailto:suryaanish1149198@gmail.com">Send a message</a></div></div>
+            <div class="info-card"><div class="info-icon"><i class="fas fa-phone"></i></div><div class="info-details"><h3>Phone</h3><p>+91 81210 21005</p><a href="tel:+918121021005">Call me</a></div></div>
+            <div class="info-card"><div class="info-icon"><i class="fas fa-map-marker-alt"></i></div><div class="info-details"><h3>Location</h3><p>Hyderabad, Telangana, India</p></div></div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <input type="hidden" name="access_key" value="49581ffe-1a34-4acd-a99e-2ede784cf73b">
+            <div class="form-group"><label for="cname">Your Name</label><input type="text" id="cname" name="name" placeholder="Enter your name" required></div>
+            <div class="form-group"><label for="cemail">Your Email</label><input type="email" id="cemail" name="email" placeholder="Enter your email" required></div>
+            <div class="form-group"><label for="cphone">Phone Number</label><input type="tel" id="cphone" name="phone" placeholder="Enter your phone number"></div>
+            <div class="form-group"><label for="csubject">Subject</label><input type="text" id="csubject" name="subject" placeholder="Enter subject" required></div>
+            <div class="form-group"><label for="cmessage">Message</label><textarea id="cmessage" name="message" rows="5" placeholder="Enter your message" required></textarea></div>
+            <button type="submit" class="submit-btn"><span>Send Message</span><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 SURYA ANISH K. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart"></i> by SURYA ANISH K</p>
+    </footer>
+  </section>
+</div><!-- end page-contact -->
+
+<!-- ========== BLOG READER MODAL ========== -->
+<div class="blog-reader-overlay" id="blogReaderOverlay">
+  <div class="blog-reader-modal">
+    <div class="blog-reader-header">
+      <div class="blog-reader-header-left">
+        <span class="blog-reader-tag" id="readerTag"></span>
+        <h2 class="blog-reader-title" id="readerTitle"></h2>
+        <span class="blog-reader-date" id="readerDate"></span>
+      </div>
+      <button class="blog-reader-close" onclick="closeBlogReader()" aria-label="Close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="blog-reader-body" id="readerBody"></div>
+    <div class="blog-reader-footer">
+      <a class="blog-open-external" id="readerExternal" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Open on Blogger</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
