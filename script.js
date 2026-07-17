@@ -59,7 +59,7 @@ function initHomeAnimations() {
 }
 
 /* ── PROJECT FILTER + PAGINATION ── */
-const PROJECTS_PER_PAGE = 6;
+const PROJECTS_PER_PAGE = 9;
 
 function initProjectFilter() {
   const btns       = document.querySelectorAll('.filter-btn');
