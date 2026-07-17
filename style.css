@@ -95,6 +95,11 @@ nav a:hover::after,nav a.nav-active::after{width:100%;}
 .project-card:hover .project-overlay{transform:translateY(0);}
 .project-overlay h3{font-family:'Segoe UI',sans-serif;font-size:1.05rem;font-weight:600;margin-bottom:5px;color:#fff;}
 .project-overlay p{font-size:.83rem;color:#b8b8b8;}
+.pagination{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.page-btn{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);color:#a0a0a0;font-family:'Segoe UI',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:1px;cursor:pointer;padding:8px 15px;border-radius:8px;transition:all .3s;}
+.page-btn:hover:not(:disabled){color:#fff;border-color:rgba(0,212,255,.4);background:rgba(0,212,255,.08);}
+.page-btn.active{color:#0d0721;background:linear-gradient(90deg,#00d4ff,#0099cc);border-color:transparent;}
+.page-btn:disabled{opacity:.35;cursor:not-allowed;}
 .portfolio-footer{text-align:center;padding:20px 0;}
 .portfolio-footer p{font-size:.95rem;color:#c8c8c8;font-style:italic;margin:4px 0;}
 

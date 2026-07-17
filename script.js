@@ -58,20 +58,75 @@ function initHomeAnimations() {
   }
 }
 
-/* ── PROJECT FILTER ── */
+/* ── PROJECT FILTER + PAGINATION ── */
+const PROJECTS_PER_PAGE = 6;
+
 function initProjectFilter() {
-  const btns  = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
-  btns.forEach(btn => btn.addEventListener('click', () => {
-    btns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
+  const btns       = document.querySelectorAll('.filter-btn');
+  const cards       = Array.from(document.querySelectorAll('.project-card'));
+  const paginationEl = document.getElementById('projectsPagination');
+  if (!btns.length || !cards.length) return;
+
+  let currentFilter = 'all';
+  let currentPage    = 1;
+
+  function getFilteredCards() {
+    return cards.filter(c => currentFilter === 'all' || c.dataset.category === currentFilter);
+  }
+
+  function renderPage() {
+    const filtered   = getFilteredCards();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PROJECTS_PER_PAGE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const start = (currentPage - 1) * PROJECTS_PER_PAGE;
+    const end   = start + PROJECTS_PER_PAGE;
+    const pageCards = filtered.slice(start, end);
+
     cards.forEach(c => {
-      const show = f === 'all' || c.dataset.category === f;
+      const show = pageCards.includes(c);
       c.classList.toggle('hide', !show);
       if (show) c.style.animation = 'fadeIn .4s ease forwards';
     });
+
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    if (!paginationEl) return;
+    paginationEl.innerHTML = '';
+    if (totalPages <= 1) return;
+
+    const makeBtn = (label, page, opts = {}) => {
+      const b = document.createElement('button');
+      b.className = 'page-btn' + (opts.active ? ' active' : '');
+      b.textContent = label;
+      b.disabled = !!opts.disabled;
+      b.addEventListener('click', () => {
+        currentPage = page;
+        renderPage();
+        document.querySelector('.portfolio-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      return b;
+    };
+
+    paginationEl.appendChild(makeBtn('‹ Prev', currentPage - 1, { disabled: currentPage === 1 }));
+    for (let p = 1; p <= totalPages; p++) {
+      paginationEl.appendChild(makeBtn(String(p), p, { active: p === currentPage }));
+    }
+    paginationEl.appendChild(makeBtn('Next ›', currentPage + 1, { disabled: currentPage === totalPages }));
+  }
+
+  btns.forEach(btn => btn.addEventListener('click', () => {
+    btns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    currentPage    = 1;
+    renderPage();
   }));
+
+  renderPage();
 }
 
 /* ── BLOG TABS ── */
